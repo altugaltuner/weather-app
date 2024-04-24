@@ -1,0 +1,58 @@
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #DEAB4D;
+    height: 600px;
+    width: 100px;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.30);
+    border-radius: 30px;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.30), 0px 0px 4px rgba(0, 0, 0, 0.30);
+    transition: all 0.3s ease-in-out;
+    gap: 15px;
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .logo-titles {
+            padding: 0px;
+            margin: 0px;
+            color: white;
+        }
+
+        .i-logo-top {
+            width: 50px;
+            height: 50px;
+            padding-bottom: 80px;
+
+            .profile-class {
+                margin-top: 10px;
+            }
+        }
+
+        .i-logo {
+            width: 50px;
+            height: 50px;
+
+            .logo-class {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        &:hover {
+            background-color: darken(#FFA500, 10%);
+        }
+
+        .active {
+            background-color: darken(#FFA500, 20%);
+        }
+    }
+
+
+
+}

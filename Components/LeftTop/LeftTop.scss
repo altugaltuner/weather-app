@@ -1,0 +1,33 @@
+.left-top-main {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: none;
+
+    .select-cities-div {
+        .select-cities-div-select {
+            background: none;
+            color: white;
+            font-size: 30px;
+            border: none;
+            padding: 10px 0px 10px 10px;
+
+            option {
+                background-color: #916617;
+            }
+        }
+    }
+
+    .weather-state {
+        font-size: 50px;
+        padding-bottom: 100px;
+    }
+
+    .temperature {
+        font-size: 80px;
+    }
+
+    .todays-date {
+        font-size: 24px;
+    }
+}
