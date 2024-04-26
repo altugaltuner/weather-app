@@ -1,0 +1,13 @@
+.day-forecast-main {
+    display: flex;
+    background-color: #DEAB4D;
+    width: auto;
+    margin-left: 30px;
+
+    border-radius: 20px;
+
+    .forecast-p {
+        height: min-content;
+        color: white;
+    }
+}

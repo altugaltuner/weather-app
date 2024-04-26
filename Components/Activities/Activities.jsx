@@ -11,12 +11,24 @@ function Activities() {
 
     return (
         <div className='activities-main'>
-            <h2>Activities in your area</h2>
+            <h2 className='activities-main-h2'>Activities in your area</h2>
             <div className='pic-div'>
-                <img src={aquapark} alt="" srcset="" />
-                <img src={beach} alt="" srcset="" />
-                <img src={wood1} alt="" srcset="" />
-                <img src={wood2} alt="" srcset="" />
+                <div className='pic-div-one'>
+                    <img src={aquapark} alt="" srcset="" />
+                    <p className='pic-div-p'>2km away</p>
+                </div>
+                <div className='pic-div-one'>
+                    <img src={beach} alt="" srcset="" />
+                    <p className='pic-div-p'>1.5km away</p>
+                </div>
+                <div className='pic-div-one'>
+                    <img src={wood1} alt="" srcset="" />
+                    <p className='pic-div-p'>3km away</p>
+                </div>
+                <div className='pic-div-one'>
+                    <img src={wood2} alt="" srcset="" />
+                    <p className='pic-div-p'>2km away</p>
+                </div>
             </div>
         </div>)
 }

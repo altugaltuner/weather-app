@@ -3,6 +3,8 @@
     flex-direction: column;
     color: white;
     background: none;
+    width: 220px;
+    margin-left: 50px;
 
     .select-cities-div {
         .select-cities-div-select {
@@ -19,12 +21,12 @@
     }
 
     .weather-state {
-        font-size: 40px;
+        font-size: 50px;
 
     }
 
     .temperature {
-        font-size: 50px;
+        font-size: 60px;
     }
 
     .todays-date {

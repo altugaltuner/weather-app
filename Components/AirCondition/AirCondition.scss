@@ -1,0 +1,32 @@
+.air-condition {
+    width: 324px;
+    color: white;
+    margin-left: 50px;
+    background-color: #DEAB4D;
+    padding: 20px;
+    border-radius: 50px;
+
+    .scroll-bar-air {
+
+        .scroll-bar-p {}
+    }
+
+    .air-conditions-column-panel {
+
+        h3 {
+            margin: 0px;
+        }
+
+        .condition-one {
+
+            .air-condition-p {
+                margin: 0px;
+            }
+
+            .conditions-stats {
+                padding-left: 30px;
+                margin: 0px;
+            }
+        }
+    }
+}
