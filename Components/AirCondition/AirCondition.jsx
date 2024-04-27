@@ -53,8 +53,9 @@ function AirCondition() {
                         </div>
                     ))}
                 </div>
-
                 <button className="scroll-button right" onClick={() => handleScroll('right')}>{'>'}</button>
+                <div className='clock-of-day'>8:00PM GMT</div>
+
             </div>
 
             <div className='air-conditions-column-panel'>
