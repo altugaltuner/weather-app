@@ -6,10 +6,87 @@
     padding: 20px;
     border-radius: 50px;
 
-    .scroll-bar-air {
+    .days-scroll-container {
+        display: flex;
+        align-items: center;
+        position: relative;
 
-        .scroll-bar-p {}
+        .scroll-button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: orangered;
+
+            &.left {
+                left: -5px;
+            }
+
+            &.right {
+                right: -5px;
+            }
+        }
+
+        .day-list {
+            display: flex;
+            overflow-x: hidden;
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            margin: 0 40px; // scroll butonları için yer bırak
+
+            .day {
+                flex: 0 0 auto;
+                // Diğer stil tanımları...
+            }
+        }
+
+        .day {
+            flex: 0 0 auto; // Günleri eşit aralıklarla hizalar ve scroll içinde sabitler
+            width: 30px;
+            height: 80px;
+            margin: 0 10px; // günler arası boşluk
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px; // köşeleri yuvarlatma
+            opacity: 0.7;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; // Geçiş efekti ekle
+            cursor: pointer;
+
+            img,
+            .day-text {
+                // img ve gün ismini içeren element için stil
+                transition: transform 0.3s ease-in-out;
+            }
+
+            &.active {
+                opacity: 1; // Opaklığı tam yap
+                transform: scale(1.2); // Yüzde 20 oranında büyüt
+
+                img,
+                .day-text {
+                    transform: scale(1.2); // Resim ve yazıyı yüzde 20 büyüt
+                }
+            }
+        }
     }
+
+
+
 
     .air-conditions-column-panel {
 
@@ -21,6 +98,7 @@
 
             .air-condition-p {
                 margin: 0px;
+                padding-left: 10px;
             }
 
             .conditions-stats {
