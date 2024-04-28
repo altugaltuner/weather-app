@@ -12,16 +12,16 @@ function App() {
   return (
     <div className='app-main'>
       <div className='top-row'>
-        <LeftTop />
-        <img src={bigSemiCloudyImg} alt="" srcset="" />
+        {/* <LeftTop />
+        <img src={bigSemiCloudyImg} alt="" srcset="" /> */}
       </div>
       <div className='app-row'>
         <Navbar />
         <div className='app-column'>
           <Activities />
-          <DayForecast />
+          {/* <DayForecast /> */}
         </div>
-        <AirCondition />
+        {/* <AirCondition /> */}
       </div>
     </div>
   )
